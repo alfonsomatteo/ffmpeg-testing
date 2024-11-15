@@ -1,3 +1,5 @@
 fastapi
 uvicorn
 python-multipart
+pydantic
+requests  # Opzionale, ma utile per testing e chiamate API interne
