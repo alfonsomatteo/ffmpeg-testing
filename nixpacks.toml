@@ -10,4 +10,5 @@ command = "pip3 install -r requirements.txt"
 
 # Fase di avvio: esegue il server FastAPI con Uvicorn
 [start]
-command = "uvicorn main:app --host 0.0.0.0 --port 8000"
+command = "uvicorn main:app --host 0.0.0.0 --port 80"
+
