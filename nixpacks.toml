@@ -1,5 +1,13 @@
+# nixpacks.toml
+
+# Fase di setup: installa Python e FFmpeg
 [phases.setup]
 nixPkgs = ["python3", "ffmpeg"]
 
-[build]
+# Fase di build: installa i pacchetti Python dal requirements.txt
+[phases.build]
 command = "pip3 install -r requirements.txt"
+
+# Fase di avvio: esegue il server FastAPI con Uvicorn
+[start]
+command = "uvicorn main:app --host 0.0.0.0 --port 8000"
